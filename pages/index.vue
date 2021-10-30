@@ -1,7 +1,7 @@
 <template>
   <div>
-    <cb-o-home />
-    <cb-o-projects />
+    <cb-o-home/>
+    <cb-o-my-projects-temp-2 />
   </div>
 </template>
 

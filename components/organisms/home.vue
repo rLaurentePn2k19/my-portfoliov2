@@ -21,8 +21,8 @@
           </v-card-subtitle>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="my_secondary" class="rounded-lg pa-5 text-capitalize button white--text font-weight-black">Github</v-btn>
-            <v-btn color="my_secondary" class="rounded-lg pa-5 text-capitalize button white--text font-weight-black">Resume</v-btn>
+            <v-btn color="my_button" class="rounded-lg pa-5 text-capitalize button white--text font-weight-black">Github</v-btn>
+            <v-btn color="my_button" class="rounded-lg pa-5 text-capitalize button white--text font-weight-black">Resume</v-btn>
             <v-spacer></v-spacer> 
           </v-card-actions>
         </v-card>
@@ -36,3 +36,9 @@ export default {
   name: 'home'
 };
 </script>
+
+<style scoped>
+.floating-img{
+  float: left;
+}
+</style>

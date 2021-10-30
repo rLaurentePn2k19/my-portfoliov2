@@ -97,7 +97,8 @@ export default {
           success: colors.green.accent3,
           background: '#1d1d1e',
           my_secondary: '#5dd9d9',
-          my_button: '#348180'
+          my_button: '#348180',
+          my_primary: '#2f6e77'
         }
       }
     }
