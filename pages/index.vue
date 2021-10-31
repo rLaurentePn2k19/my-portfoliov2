@@ -1,7 +1,8 @@
 <template>
   <div>
-    <cb-o-home/>
-    <cb-o-my-projects-temp-2 />
+    <cb-o-my-home-temp-2 />
+    <cb-o-my-about-me-temp-1 />
+    <cb-o-my-skills-temp-1 />
   </div>
 </template>
 
