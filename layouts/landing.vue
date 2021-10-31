@@ -17,6 +17,5 @@ export default {
 <style>
 #app {
   background-color: #1d1d1e;
-  height: 200vh;
 }
 </style>
