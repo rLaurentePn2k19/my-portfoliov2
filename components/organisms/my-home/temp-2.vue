@@ -8,9 +8,22 @@
           <div class="display-1 white--text mx-2">Freelance Web Developer</div>
           <div class="white--text d-flex align-start ma-2 mt-10">
             <v-hover v-slot="{ hover }">
-                <v-btn :outlined="hover" width="50%" height="70" class="text-capitalize title rounded-lg white--text font-weight-black" color="my_primary" depressed>
-                    Hire Me
-                </v-btn>
+              <v-btn
+                :outlined="hover"
+                width="50%"
+                height="70"
+                class="
+                  text-capitalize
+                  title
+                  rounded-lg
+                  white--text
+                  font-weight-black
+                "
+                color="my_primary"
+                depressed
+              >
+                Hire Me
+              </v-btn>
             </v-hover>
           </div>
         </div>
@@ -24,6 +37,7 @@
               lazy-src="/img/steve.png"
               alt="programmer"
               contain
+              class="my-back-img"
             />
           </picture>
         </div>
@@ -42,9 +56,40 @@ export default {
 .floating-img {
   float: left;
 }
-.my-img{
-    background-image: url('/img/blob-haikei-1.svg');
-    background-repeat: no-repeat;
-    background-position-x: -7rem;
+.my-img {
+  background-image: url("/img/blob-haikei-1.svg");
+  background-repeat: no-repeat;
+  background-position-x: -7rem;
+}
+
+.my-back-img {
+  animation: pulse 3s ease-out infinite alternate;
+  transform-origin: 50% 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateY(0);
+  }
+
+  5% {
+    transform: translateY(-10px);
+  }
+
+  10% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-10px);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 </style>
