@@ -44,7 +44,6 @@
         rounded-lg
         pa-5
         text-capitalize
-        shake
         white--text
         font-weight-black
       "
