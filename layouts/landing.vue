@@ -5,6 +5,7 @@
     <v-main>
         <Nuxt />
     </v-main>
+    <cb-m-frame-footer />
   </v-app>
 </template>
 

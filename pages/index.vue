@@ -6,6 +6,7 @@
     <cb-o-my-projects-temp-1 />
     <cb-o-my-experience-temp-1 />
     <cb-o-my-have-any-temp-1 />
+    <cb-o-my-contact-me-temp-1 />
   </div>
 </template>
 
