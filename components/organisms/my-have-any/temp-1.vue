@@ -9,9 +9,12 @@
           <v-btn
             :outlined="hover"
             color="background"
-            :class="`${hover ? 'white--text' : 'my_primary--text'} text-capitalize headline font-weight-bold rounded-lg`"
+            :class="`${
+              hover ? 'white--text' : 'my_primary--text'
+            } text-capitalize headline font-weight-bold rounded-lg`"
             width="20%"
             height="70"
+            @click="goToContact"
           >
             Hire Me
           </v-btn>
@@ -34,6 +37,16 @@ export default {
         height: "100vh"
       }
     };
+  },
+
+  methods: {
+    goToContact() {
+      this.$vuetify.goTo("#contact", {
+        duration: 700,
+        offset: 0,
+        easing: "easeInOutCubic"
+      });
+    }
   }
 };
 </script>

@@ -28,7 +28,19 @@
       </v-col>
       <v-col class="text-center" cols="12">
         <div class="white--text subtitle-1">
-          Copyright © 2021 NuxtJs + Vuetify | Dev Rangie
+          Copyright © 2021 <a
+              target="_blank"
+              href="https://nuxtjs.org/"
+              class="my_primary--text text-decoration-none font-weight-bold"
+            >
+              NuxtJs
+            </a> + <a
+              target="_blank"
+              href="https://vuetifyjs.com/en/"
+              class="my_primary--text text-decoration-none font-weight-bold"
+            >
+              Vuetify
+            </a> | Dev Rangie
         </div>
       </v-col>
     </v-footer>

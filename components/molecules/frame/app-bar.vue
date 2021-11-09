@@ -7,14 +7,15 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-hover v-slot="{ hover }">
-      <v-btn
-        :text="!hover"
-        :dark="hover"
-        color="my_primary"
-        class="button font-weight-bold text-capitalize"
-      >
-        About Me
-      </v-btn>
+        <v-btn
+          :text="!hover"
+          :dark="hover"
+          color="my_primary"
+          class="button font-weight-bold text-capitalize"
+          @click="goToAboutMe"
+        >
+          About Me
+        </v-btn>
     </v-hover>
     <v-hover v-slot="{ hover }">
       <v-btn
@@ -22,6 +23,7 @@
         :dark="hover"
         class="mx-2 button font-weight-bold text-capitalize"
         color="my_primary"
+        @click="goToSkills"
       >
         Skills
       </v-btn>
@@ -32,6 +34,7 @@
         :dark="hover"
         color="my_primary"
         class="button font-weight-bold text-capitalize"
+        @click="goToProjects"
       >
         Projects
       </v-btn>
@@ -40,13 +43,8 @@
     <v-btn
       color="my_primary"
       depressed
-      class="
-        rounded-lg
-        pa-5
-        text-capitalize
-        white--text
-        font-weight-black
-      "
+      class="rounded-lg pa-5 text-capitalize white--text font-weight-black"
+      @click="goToContact"
     >
       Contact Me
     </v-btn>
@@ -55,7 +53,41 @@
 
 <script>
 export default {
-  name: "app-bar"
+  name: "app-bar",
+
+  methods: {
+    goToAboutMe() {
+      this.$vuetify.goTo('#about-me', {
+        duration: 700,
+        offset: 0,
+        easing: "easeInOutCubic"
+      });
+    },
+
+    goToSkills() {
+      this.$vuetify.goTo('#skills', {
+        duration: 700,
+        offset: 0,
+        easing: "easeInOutCubic"
+      });
+    },
+
+    goToProjects() {
+      this.$vuetify.goTo('#projects', {
+        duration: 700,
+        offset: 0,
+        easing: "easeInOutCubic"
+      });
+    },
+
+    goToContact(){
+      this.$vuetify.goTo('#contact', {
+        duration: 700,
+        offset: 0,
+        easing: "easeInOutCubic"
+      });
+    }
+  }
 };
 </script>
 
