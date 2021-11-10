@@ -1,6 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  loading: true,
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -9,8 +10,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - my-portfoliov2',
-    title: 'my-portfoliov2',
+    titleTemplate: '%s Portfoliov2',
+    title: 'Dev Rangie',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,7 +22,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/img/my-logo-1-removebg-preview.png' }
     ]
   },
 
