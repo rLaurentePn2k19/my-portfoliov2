@@ -36,7 +36,7 @@
         class="button font-weight-bold text-capitalize"
         @click="goToProjects"
       >
-        Projects
+        Portfolio
       </v-btn>
     </v-hover>
     <v-spacer></v-spacer>
