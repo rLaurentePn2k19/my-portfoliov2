@@ -29,7 +29,7 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="6" class="d-flex justify-start my-img">
+      <v-col cols="12" md="6" class="d-flex justify-center my-img">
         <div class="d-flex justify-center">
           <picture>
             <v-img
@@ -70,7 +70,7 @@ export default {
   background-image: url("/img/blob-haikei-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -6rem;
+  background-position-x: -3rem;
 }
 
 .my-back-img {

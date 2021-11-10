@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12" class="d-flex justify-center">
         <div class="white--text display-3">
-          <div class="mb-4">What I do</div>
+          <div class="mb-4">What I Do</div>
           <v-divider
             v-for="i in 5"
             :key="i"
@@ -60,7 +60,8 @@ export default {
   data() {
     return {
       isActive: false,
-      skillDescription: 'For 1 year of experience in the IT Industry, I developed this set of skills, and looking forward to learn new and improved my technical skills.',
+      skillDescription:
+        "For 1 year of experience in the IT Industry, I developed this set of skills, and looking forward to learn new and improved my technical skills.",
       skills: [
         {
           title: "UI Interface",

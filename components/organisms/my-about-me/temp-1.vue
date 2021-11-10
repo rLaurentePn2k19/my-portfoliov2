@@ -56,7 +56,7 @@
                 "
                 :outlined="!hover"
                 color="my_primary"
-                href="/img/Rangie.Laurente.Resume_Job.Hunting.pdf"
+                href="/img/dev-rangie-resume.pdf"
                 target="_blank"
               >
                 Download CV

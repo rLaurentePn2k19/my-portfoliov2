@@ -2,7 +2,7 @@
   <v-app-bar app fixed color="background" flat height="100">
     <v-toolbar-title class="my_secondary--text font-weight-bold headline">
       <picture>
-        <v-img width="95" src="/img/my-logo-1-removebg-preview.png"> </v-img>
+        <v-img class="logo" @click="goHome" width="95" src="/img/my-logo-1-removebg-preview.png"> </v-img>
       </picture>
     </v-toolbar-title>
     <v-spacer></v-spacer>
@@ -86,12 +86,25 @@ export default {
         offset: 0,
         easing: "easeInOutCubic"
       });
+    },
+
+    goHome(){
+      this.$vuetify.goTo('#home', {
+        duration: 700,
+        offset: 0,
+        easing: "easeInOutCubic"
+      });
     }
   }
 };
 </script>
 
 <style scoped>
+
+.logo{
+  cursor: pointer;
+}
+
 .shake {
   animation: shake-animation 3s ease infinite;
   transform-origin: 50% 50%;

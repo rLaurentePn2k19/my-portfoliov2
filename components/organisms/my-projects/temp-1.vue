@@ -21,20 +21,27 @@
                 <v-card class="rounded-0" :height="500" width="100%">
                   <v-img
                     height="100%"
-                    src="https://miro.medium.com/max/1400/1*4YEYKYhHEn5mk8GIcZkENA.jpeg"
+                    src="/img/laptop-dark.jpg"
+                    lazy-src="/img/laptop-dark.jpg"
                   >
                   </v-img>
                 </v-card>
                 <v-row class="mt-2">
                   <v-col cols="6">
                     <v-card class="rounded-0" :height="274" width="100%">
-                      col
+                      <v-img
+                        height="100%"
+                        src="/img/my-wallpapper.png"
+                        lazy-src="/img/my-wallpapper.png"
+                      >
+                      </v-img>
                     </v-card>
                   </v-col>
                   <v-col cols="6">
                     <v-card class="rounded-0" :height="274" width="100%">
                       <v-img
                         src="/img/rangie-removebg.png"
+                        lazy-src="/img/rangie-removebg.png"
                         height="100%"
                       />
                     </v-card>
@@ -43,21 +50,27 @@
               </v-col>
               <v-col cols="5">
                 <v-card class="rounded-0" :height="225" width="100%">
-                  col
+                  <v-img
+                    src="/img/vue.png"
+                    lazy-src="/img/vue.png"
+                    height="100%"
+                  />
                 </v-card>
                 <v-row class="mt-2">
                   <v-col cols="12">
                     <v-card class="rounded-0" :height="300" width="100%">
                       <v-img
                         height="100%"
-                        src="https://sugbo.ph/wp-content/uploads/2021/03/Kota-Beach-Resort-Bantayan-Island-1-1024x640.jpg"
+                        src="/img/ruins.jpg"
+                        lazy-src="/img/ruins.jpg"
                       ></v-img>
                     </v-card>
                   </v-col>
                   <v-col cols="12">
                     <v-card class="rounded-0" :height="225" width="100%">
-                       <v-img
+                      <v-img
                         src="/img/pn.jpg"
+                        lazy-src="/img/pn.jpg"
                         height="100%"
                       />
                     </v-card>
