@@ -20,7 +20,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12">
+      <v-col cols="12" class="d-flex justify-center">
         <div class="mt-10">
           <v-slide-group
             v-model="model"
@@ -28,27 +28,31 @@
             :show-arrows="false"
             center-active
           >
-            <v-slide-item v-for="n in 5" :key="n" v-slot="{ active, toggle }">
+            <v-slide-item
+              v-for="(work, i) in works"
+              :key="i"
+              v-slot="{ active, toggle }"
+            >
               <v-card
                 :color="active ? 'my_primary' : 'transparent'"
                 class="pa-4 rounded-0"
                 height="500"
-                width="350"
+                width="380"
                 @mouseenter="toggle"
                 :flat="!active"
                 :elevation="active ? '24' : '0'"
               >
                 <v-card-title class="d-flex justify-start white--text mt-6">
                   <div class="subtitle-1 font-weight-light">
-                    December 2020 - April 2021
+                    {{ work.date }}
                   </div>
                 </v-card-title>
                 <v-card-subtitle class="white--text">
                   <div class="headline font-weight-bold mt-2">
-                    Web Developer
+                    {{ work.title }}
                   </div>
                   <div class="subtitle-1 font-weight-light mt-2">
-                    CrewBloom Inc.
+                    {{ work.company }}
                   </div>
                 </v-card-subtitle>
 
@@ -57,11 +61,7 @@
                     <v-col cols="12" class="d-flex justify-center">
                       <div class="title font-weight-light text-justify">
                         <blockquote>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Dolore distinctio perspiciatis voluptatem id?
-                          Fugit in labore voluptate vitae impedit nesciunt
-                          provident adipisci non quos quae! Fugit aliquid dolore
-                          facilis culpa.
+                          {{ work.description }}
                         </blockquote>
                       </div>
                     </v-col>
@@ -80,7 +80,28 @@
 export default {
   name: "jobExperience",
   data: () => ({
-    model: null
+    model: null,
+    works: [
+      {
+        date: "March 2021 - Present",
+        company: "CrewBloom Inc.",
+        title: "Web Developer",
+        description: "Currently working as Full-Stack Web Developer, using NuxtJs-Strapi-MySQL."
+      },
+      {
+        date: "December 2020 - April 2021",
+        company: "Softype Philippines Inc.",
+        title: "Technical Consultant",
+        description: "I was an Oracle NetSuite Technical Consultant/Developer, I make NetSuite Customization Processess using SuiteScript 1.x, 2.x, and solved any issue related to technical that client encountered."
+      },
+      {
+        date: "June 2020 - August 2020",
+        company: "Increment Technologies",
+        title: "Web Developer",
+        description:
+          "I was once a volunteer Web Developer, which I helped to develop an Application for Contact Tracing of COVID-19."
+      }
+    ]
   })
 };
 </script>

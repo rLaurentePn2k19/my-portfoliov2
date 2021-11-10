@@ -21,6 +21,7 @@
                 "
                 color="my_primary"
                 depressed
+                @click="goToContact"
               >
                 Hire Me
               </v-btn>
@@ -28,13 +29,13 @@
           </div>
         </div>
       </v-col>
-      <v-col cols="12" md="6" class="d-flex justify-start my-img">
+      <v-col cols="12" md="6" class="d-flex justify-center my-img">
         <div class="d-flex justify-center">
           <picture>
             <v-img
               width="500"
-              src="/img/steve.png"
-              lazy-src="/img/steve.png"
+              src="/img/IMG20211109115359-removebg-preview.png"
+              lazy-src="/img/IMG20211109115359-removebg-preview.png"
               alt="programmer"
               contain
               class="my-back-img"
@@ -48,7 +49,16 @@
 
 <script>
 export default {
-  name: "home"
+  name: "home",
+  methods: {
+    goToContact(){
+      this.$vuetify.goTo('#contact', {
+        duration: 700,
+        offset: 0,
+        easing: "easeInOutCubic"
+      });
+    }
+  }
 };
 </script>
 
@@ -59,12 +69,14 @@ export default {
 .my-img {
   background-image: url("/img/blob-haikei-1.svg");
   background-repeat: no-repeat;
-  background-position-x: -7rem;
+  background-size: cover;
+  background-position-x: -3rem;
 }
 
 .my-back-img {
   animation: pulse 3s ease-out infinite alternate;
   transform-origin: 50% 50%;
+  margin-top: -100px;
 }
 
 @keyframes pulse {
